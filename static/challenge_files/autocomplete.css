@@ -1,0 +1,170 @@
+.bootstrap-tagsinput {
+    width: 100%;
+    min-height: 35px;
+    border-color: #bfbfbf;
+    border:1px solid #bfbfbf;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+
+.bootstrap-tagsinput-error {
+    width: 100%;
+    min-height: 35px;
+    border-color: #a94442;
+    border:1px solid #a94442;
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+}
+/* Overwriting tags css */
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-menu {    /* used to be tt-dropdown-menu in older versions */
+    width: 360px;
+    max-height: 250px;
+    overflow-y: scroll;
+    margin-top: 0px;
+    left: 0;
+
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    color: #14456b;
+    padding: 3px 20px;
+    line-height: 24px;
+    /* prevent horizontal scrollbar */
+}
+
+.tt-suggestion.tt-cursor,.tt-suggestion:hover,
+.tt-suggestion.tt-cursor,.tt-suggestion:focus,
+.tt-suggestion.tt-cursor,.tt-suggestion:active{
+    color: #14456b;
+    background: none !important;
+    background-color: #f2f2f2!important;
+
+}
+
+.tt-suggestion p {
+    margin: 0;
+}
+
+/* Autocomplete elements */
+.auto-comp-parent {
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    display: flex;
+}
+
+.auto-comp-principal, .auto-comp-principal.ui-state-hover, .auto-comp-principal.ui-state-active {
+    height: 35px;
+    align-items: center;
+    display: flex;
+    margin-left: 1px;
+    margin-right: 0;
+    color: #1d4363;
+    font-weight: 500;
+    clear: both;
+}
+.auto-comp-principal-no-image, .auto-comp-principal-no-image.ui-state-hover, .auto-comp-principal-no-image.ui-state-active {
+    height: 35px;
+    align-items: center;
+    display: flex;
+    margin-left: 40px !important;
+    clear:both;
+}
+
+.auto-comp-secun, .auto-comp-secun.ui-state-hover, .auto-comp-secun.ui-state-active {
+    align-items: center;
+    display: flex;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    margin-right: 0 !important;
+    font-weight: 300;
+    color: #666666;
+}
+.auto-comp-img, .auto-comp-img.ui-state-hover, .auto-comp-img.ui-state-hover {
+    max-width: 25px;
+    max-height: 25px;
+    width: auto;
+    height: auto;
+    margin-left: 5px !important;
+    margin-right: 2px !important;
+    vertical-align: middle;
+}
+.auto-comp-img-topic, .auto-comp-img-topic.ui-state-hover, .auto-comp-img-topic.ui-state-hover {
+    max-width: 15px;
+    max-height: 15px;
+    width: auto;
+    height: auto;
+    margin-left: 5px !important;
+    margin-right: 2px !important;
+    vertical-align: middle;
+}
+
+.auto-comp-parent .ui-state-hover, .auto-comp-parent .ui-state-active {
+    font-weight: 500;
+}
+
+.auto-comp-parent i.ui-state-hover, .auto-comp-parent i.ui-state-active {
+    font-weight: 900;
+}
+
+#buscador > .auto-comp-parent:hover, .auto-comp-parent:active {
+    background: #f2f2f2 none !important;
+    display: flex !important;
+}
+
+#buscador> .ui-widget-content {
+    border: 1px solid #ddd;
+    font-weight: 500;
+    color: #14456b;
+    font-size: 15px;
+    background-color: white;
+
+}
+
+/* Adding scroll to autocomplete */
+.ui-autocomplete {
+    max-height: 250px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    z-index:9999;
+    width:fit-content;
+    min-width: 200px;
+    max-width: 600px;
+}
+
+.ui-state-hover {
+    background: none !important;
+    color: var(--textblack) !important;
+    border: none !important;
+}
+
+.ui-state-active {
+    background: none !important;
+    color: var(--textblack) !important;
+    border: none !important;
+}
+
+.ui-menu-item:has(.ui-state-active) {
+    background-color: var(--ice);
+}

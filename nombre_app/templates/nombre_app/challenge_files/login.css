@@ -1,0 +1,18 @@
+#login-resend-link {
+    display: none;
+}
+
+.link_btn {
+    background: none;
+    color: var(--aguamarina);
+}
+
+.link_btn:hover {
+    color: var(--textblack);
+    text-decoration: underline;
+}
+
+.email_sent_label{
+    display: none;
+    color: var(--textblack);
+}

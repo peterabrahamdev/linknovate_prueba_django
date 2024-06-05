@@ -1,0 +1,189 @@
+:root {
+    --cookiebanner-light-grey: #e5e5e5;
+    --cookiebanner-grey: #ccc;
+}
+
+.btn.hidden {
+    display: none;
+}
+
+#cookiebannerModal p {
+    margin: 0 0 0.2em;
+    font-size: 16px !important;
+}
+
+#cookiebannerModal {
+    --color-highlight: var(--aguamarina);
+    --color-button-fg: var(--textwhite);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: hsla(0, 0%, 0%, .5);
+    font-family: Asap, sans-serif;
+    font-size: 16px;
+}
+
+#cookiebannerModal.hidden {
+    display: none;
+}
+
+#cookiebannerModal a {
+    color: var(--forest);
+    text-decoration: none;
+}
+
+#cookiebannerModal a:hover {
+    color: var(--textblack);
+    text-decoration: underline;
+}
+
+#cookiebannerModalDialog {
+    max-width: 600px;
+    background: var(--textwhite);
+    border-radius: 9px;
+}
+
+#cookiebannerModalHeader {
+    padding: 1rem;
+    border-bottom: 1px solid var(--cookiebanner-light-grey);
+}
+
+#cookiebannerModalTitle {
+    font-weight: bold;
+    margin: 0 0 0.4rem;
+}
+
+#cookiebannerModalBody {
+    padding: 1rem;
+}
+
+#cookiebannerModalFooter {
+    padding: 1rem;
+    border-top: 1px solid var(--cookiebanner-light-grey);
+    text-align: right;
+}
+
+#cookiebannerModalFooter .text-left {
+    text-align: left;
+}
+
+.cookiebannerSubmit.btn {
+    font-size: 1.2rem;
+    margin: 0.2em !important;
+    padding: 0.4em 0.7em !important;
+    background-color: var(--forest) !important;
+    color: var(--textwhite);
+    border: 0 !important;
+}
+
+.cookiebannerSubmit.btn:hover {
+    background-color: var(--deep) !important;
+}
+
+#cookiebannerModalFooterLinks {
+    text-align: left;
+    min-height: auto;
+    margin-bottom: auto;
+    display: inline-block;
+    float: left;
+    padding: 1rem 0;
+}
+
+.cookiebannerH4 {
+    display: inline-block;
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 0.56em 0;
+}
+
+.cookiebannerCollapse {
+    display: none;
+}
+
+.cookiebannerCollapse>.card-body {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.cookiebannerCollapse.show {
+    display: block;
+}
+
+.cookiebannerModalBulletList {
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-left: 1rem;
+    margin-bottom: 0;
+}
+
+.cookiebannerModalBulletList td {
+    padding: 0.1em 0.2em 0.1em;
+}
+
+/* The switch - the box around the slider */
+#cookiebannerModal .switch {
+    font-size: 1rem !important;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 1.375em;
+    margin: 0 0.3125em 0.3125em 0;
+}
+
+/* Hide default HTML checkbox */
+#cookiebannerModal .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+#cookiebannerModal .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--cookiebanner-grey);
+    border-radius: 17px;
+    transition: transform 400ms, background-color 400ms;
+}
+
+#cookiebannerModal .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.125em;
+    width: 1.125em;
+    left: 0.125em;
+    bottom: 0.125em;
+    background-color: var(--textwhite);
+    border-radius: 50%;
+    transition: transform 400ms;
+}
+
+#cookiebannerModal input:checked + .slider {
+    background-color: var(--forest);
+}
+
+#cookiebannerModal input:checked:disabled + .slider {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+#cookiebannerModal input:focus + .slider {
+    box-shadow: 0 0 1px var(--forest);
+}
+
+#cookiebannerModal input:checked + .slider:before {
+    transform: translateX(1.125em);
+}

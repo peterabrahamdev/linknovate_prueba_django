@@ -1,0 +1,15 @@
+#ebook-offer-content-content {
+    display: flex;
+    padding: 1em;
+    position: relative;
+    margin-top: 2rem;
+}
+
+#ebook-offer-content-content .explanation-content{
+    max-width: 600px;
+    width: 200%;
+}
+
+#ebook-offer-content-content .form-content {
+    margin: 0;
+}

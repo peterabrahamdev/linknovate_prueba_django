@@ -1,0 +1,14 @@
+:root {
+    --aguamarina: #3cd2af;
+    --aguamarina-rgba-50: rgba(60, 210, 175, 0.5);
+    --forest: #1b614f;
+    --deep: #283246;
+    --coral: #eb605f;
+    --coral-rgba-50: rgba(235,96,95, 0.50);
+    --chile: #ad1131;
+    --fog: #d8cbc7;
+    --fog-rgba-50: rgba(216, 203, 199, 0.7);
+    --textblack: #000000;
+    --textwhite: #fafafa;
+    --ice: #eaebec;
+}

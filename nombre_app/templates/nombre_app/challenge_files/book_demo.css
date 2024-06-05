@@ -1,0 +1,159 @@
+
+.book-items-modal.show{
+    display: flex!important;
+    align-items: center!important;
+}
+
+.book-items-modal .modal-header, .book-items-modal .modal-body {
+    background-color: var(--textwhite)
+}
+
+.book-items-modal .modal-body {
+    padding: 0;
+}
+
+.book-items-modal .modal-dialog {
+    width: 90% !important;
+    max-width: 1000px!important;
+}
+
+.book-items-modal .modal-header .close {
+    padding: 0.3rem 0.5em;
+    margin: -1rem -1rem -1rem auto;
+}
+
+button.close {
+    background-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.content-wrapper.onboarding-content {
+	z-index: 1;
+}
+
+.modal-content-wrapper-content {
+    display: block;
+    padding: 1em;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.modal-content-wrapper-content>* {
+    padding: 0 3rem;
+    width:100%;
+}
+
+.modal-content-wrapper-content .form-content{
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+.modal-content-wrapper-content .form-content .form-control{
+    max-height: 34px;
+    font-size: 18px;
+    padding: 20px;
+    border: 1px solid var(--deep);
+    width: 100%;
+    margin-top: 2px;
+}
+
+.modal-content-wrapper-content .form-content .btn-request-demo.form-control{
+    padding: 0;
+}
+
+.modal-content-wrapper-content .form-content .btn-request-demo{
+    height: 60px;
+    max-height: 60px;
+    line-height: 60px;
+}
+
+.modal-content-wrapper-content .explanation-content{
+    width: 100%;
+}
+
+.modal-content-wrapper .svg-waves{
+    margin-top: -12rem;
+}
+
+.modal-content-wrapper .title-book-demo{
+    font-weight:600;
+    margin-bottom: 3rem;
+}
+
+.modal-content-wrapper .paragraph-book-demo{
+    font-weight:400;
+    font-size: 1.1146rem;
+}
+
+.modal-content-wrapper-content form{
+    width: 100%;
+    max-width: 280px;
+    position: relative;
+    margin-left: auto;
+}
+
+.modal-content-wrapper .logo-lkn {
+    max-height: 60px;
+    background-color: var(--aguamarina);
+}
+
+.modal .feedback-msg-wrapper .feedback-msg, #request-trial-modal .feedback-msg-wrapper .feedback-msg{
+    display: none;
+    text-align: center;
+}
+
+.modal .spinner {
+    display: flex;
+    z-index: 904;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000021;
+}
+
+.modal .spinner.hidden{
+    display: none;
+}
+
+.modal .spinner .loader{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid var(--aguamarina);
+    width: 95px;
+    height: 95px;
+    margin: auto;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#book-demo-content-content .explanation-content{
+    display: flex;
+}
+
+#book-demo-content-content .logo-filter-wrapper{
+    text-align:center;
+}
+
+#book-demo-content-content img.logo-filter{
+    max-height: 2rem;
+    margin: 1rem 0;
+    filter: grayscale(100);
+}
+
+.modal .text-explanation-content{
+    min-width: 450px
+}
+
+.modal .companies-explanation-content {
+    width: 100%;
+    padding: 0 0 0 4rem;
+}
+
+.modal .companies-explanation-content .title{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
